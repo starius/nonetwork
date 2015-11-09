@@ -1,3 +1,8 @@
+// nonetwork, break standard network functions using LD_PRELOAD
+// Source: https://github.com/starius/nonetwork
+// Copyright (C) 2015 Boris Nagaev
+// License: MIT
+
 #include <errno.h>
 
 int connect(int sock, const void *addr, unsigned int len) {
